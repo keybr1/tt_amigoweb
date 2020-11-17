@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root{
+  padding: 20px;
+  background-color: #0880AE;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 21px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper{
+  font-family: 'IBM Plex Sans', sans-serif;
+  width: 460px;
+  height: 790px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 auto;
+  color: #2C2738;
+  padding: 40px 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02), 0px 32px 64px rgba(44, 39, 56, 0.04);
+  border-radius: 24px;
+}
+.title{
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  margin-bottom: 8px;
+}
+.enter{
+  color: #0880AE;
+  text-decoration: none;
+}
+.account{
+  margin-bottom: 54px;
+  line-height: 22px;
+}
+label{
+  color: #756F86;
+  font-weight: 500;
+}
+input:last-child{
+  background: #FFFFFF;
+  border: 1px solid #DBE2EA;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+  border-radius: 6px;
+  height: 52px;
+  padding-left: 16px;
+  margin-top: 7px;
+  margin-bottom: 34px;
+}
+input:hover{
+  border: 2px solid #0880AE;
+  background: #FFFFFF;
+}
+.error{
+  font-size: 14px;
+  line-height: 18px;
+  color: #FF7171;
+  margin-top: -26px;
+  margin-bottom: 8px;
+}
+.error-checkbox{
+  font-size: 14px;
+  line-height: 18px;
+  color: #FF7171;
+  margin-top: 8px;
+  margin-bottom: -26px;
+}
+input::placeholder{
+  color: #7C9CBF;
+}
+select{
+  margin-top: 8px;
+  border: 1px solid #DBE2EA;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+  border-radius: 6px;
+  height: 52px;
+  margin-bottom: 34px;
+  color: #7C9CBF;
+  padding-left: 16px;
+}
+select:focus{
+  border: 2px solid #0880AE;
+}
+option:checked{
+  background: #EBF4F8;
+  border: none;
+  border-radius: 6px;
+}
+.checkbox{
+  display: flex;
+  justify-content: flex-start;
+}
+.input-checkbox{
+  width: initial;
+  border: 1px solid #DBE2EA;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+  border-radius: 4px;
+}
+.checkbox span{
+  margin-left: 8px;
+  font-weight: 500;
+  color: #756F86;
+}
+.options{
+  text-decoration: none;
+  color: #0880AE;
+}
+button{
+  font-family: 'IBM Plex Sans', sans-serif;
+  width: 400px;
+  height: 56px;
+  background: #0880AE;
+  border: none;
+  box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+  color: #EBF4F8;
+  border-radius: 6px;
+  font-weight: 500;
+  margin-top: 38px;
+}
+button:disabled{
+  background: #DBE2EA;
+  box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+  font-weight: 500;
+  text-align: center;
+  color: #B1B5BF;
+  border: none;
+  box-sizing: border-box;
+}
+button:hover:not(:disabled){
+  box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.08), 0px 24px 48px rgba(44, 39, 56, 0.16);
+}
+button:active:not(:disabled){
+  border: 2px solid rgba(44, 39, 56, 0.86);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.0001), 0px 4px 8px rgba(44, 39, 56, 0.08);
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
